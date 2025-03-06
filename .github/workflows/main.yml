@@ -1,4 +1,4 @@
-name: flowers_model 
+name: flowers_model
 
 on:
   push:
@@ -42,4 +42,3 @@ jobs:
   
     - name: Docker Push 
       run: docker push ${{secrets.DOCKER_USER}}/tensorflow-${{secrets.MODEL_NAME}}:${{ github.sha }}
-      
