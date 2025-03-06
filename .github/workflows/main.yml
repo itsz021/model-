@@ -42,3 +42,4 @@ jobs:
   
     - name: Docker Push 
       run: docker push ${{secrets.DOCKER_USER}}/tensorflow-${{secrets.MODEL_NAME}}:${{ github.sha }}
+      
